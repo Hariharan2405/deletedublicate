@@ -1,0 +1,35 @@
+<!DocType html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="HTML,JavaScript">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+	
+	
+	</head>
+	
+	<body>
+		<script>
+			let array=[1,2,2,3,3]; 
+			function del(array){
+			let result=[];
+			for(i=0; i<array.length; i++){
+			let exists=false;
+			for(j=0; j<result.length; j++){
+					if(array[i]===result[j]){
+						exists=true;
+						break;
+					}
+					}
+					if(!exists){
+						result.push(array[i]);
+					}
+			}
+			}
+			del(array);
+		</script>
+	</body>
+</html>
